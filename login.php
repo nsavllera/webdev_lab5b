@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['logged_in'] = true;
             $_SESSION['user_role'] = $user['role'];
             $_SESSION['username'] = $user['name'];
-            header("Location: view_users.php");
+            header("Location: users_list.php");
             exit;
         }
     }
@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="password" name="password" class="form-control" required>
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
-        <a href="register.php" class="btn btn-secondary">Register</a>
+        <a href="registration.php" class="btn btn-secondary">Register</a>
     </form>
 </div>
 </body>

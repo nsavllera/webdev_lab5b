@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $sql = "UPDATE users SET matric='$matric', name='$name', role='$role' WHERE id='$id'";
     if ($conn->query($sql) === TRUE) {
-        header("Location: view_users.php");
+        header("Location: users_list.php");
         exit;
     } else {
         echo "Error updating record: " . $conn->error;
@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </select>
         </div>
         <button type="submit" class="btn btn-success">Update</button>
-        <a href="view_users.php" class="btn btn-secondary">Cancel</a>
+        <a href="users_list.php" class="btn btn-secondary">Cancel</a>
     </form>
 </div>
 </body>
