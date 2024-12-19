@@ -22,8 +22,8 @@
         <div class="mb-3">
             <label for="role" class="form-label">Role</label>
             <select name="role" class="form-select">
-                <option value="Admin">Admin</option>
-                <option value="User">User</option>
+                <option value="Lecturer">Lecturer</option>
+                <option value="Student">Student</option>
             </select>
         </div>
         <div class="mb-3">

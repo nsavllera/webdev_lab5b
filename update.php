@@ -57,8 +57,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="mb-3">
             <label for="role" class="form-label">Role</label>
             <select name="role" class="form-select">
-                <option value="Admin" <?= $user['role'] == 'Admin' ? 'selected' : '' ?>>Admin</option>
-                <option value="User" <?= $user['role'] == 'User' ? 'selected' : '' ?>>User</option>
+                <option value="Lecturer" <?= $user['role'] == 'Lecturer' ? 'selected' : '' ?>>Lecturer</option>
+                <option value="Student" <?= $user['role'] == 'Student' ? 'selected' : '' ?>>Student</option>
             </select>
         </div>
         <button type="submit" class="btn btn-success">Update</button>
